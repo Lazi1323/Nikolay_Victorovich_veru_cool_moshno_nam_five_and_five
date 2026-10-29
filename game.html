@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Game Review — Страница рецензии</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ===== HEADER (тот же, что на главной) ===== -->
+  <header class="header">
+    <div class="container header__inner">
+      <a href="index.html" class="logo">
+        <span class="logo__icon"></span>
+        <span class="logo__text"></span>
+      </a>
+      <nav class="nav">
+        <a href="index.html" class="nav__link"></a>
+        <a href="#" class="nav__link nav__link--active"></a>
+        <a href="#" class="nav__link"></a>
+        <a href="#" class="nav__link"></a>
+      </nav>
+      <form class="search">
+        <input type="text" class="search__input" placeholder="" />
+        <button type="submit" class="search__btn"></button>
+      </form>
+    </div>
+  </header>
+
+  <!-- ===== GAME PAGE ===== -->
+  <main class="game">
+    <div class="container">
+
+      <!-- Шапка игры: обложка + инфо + рейтинг -->
+      <section class="game-hero">
+        <div class="game-hero__media">
+          <!-- место под большой баннер/арт -->
+        </div>
+        <div class="game-hero__info">
+          <div class="game-hero__cover">
+            <!-- место под обложку -->
+          </div>
+          <div class="game-hero__details">
+            <h1 class="game-hero__title"></h1>
+            <div class="game-hero__tags">
+              <span class="tag"></span>
+              <span class="tag"></span>
+              <span class="tag"></span>
+            </div>
+            <ul class="game-hero__facts">
+              <li class="fact"><span class="fact__label"></span><span class="fact__value"></span></li>
+              <li class="fact"><span class="fact__label"></span><span class="fact__value"></span></li>
+              <li class="fact"><span class="fact__label"></span><span class="fact__value"></span></li>
+              <li class="fact"><span class="fact__label"></span><span class="fact__value"></span></li>
+            </ul>
+            <div class="game-hero__score">
+              <span class="score__value"></span>
+              <span class="score__stars"></span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Тело рецензии + сайдбар -->
+      <section class="game-body">
+        <div class="game-body__content">
+
+          <article class="review">
+            <h2 class="review__heading"></h2>
+            <p class="review__text"></p>
+            <p class="review__text"></p>
+            <p class="review__text"></p>
+
+            <figure class="review__figure">
+              <!-- место под скриншот в тексте -->
+            </figure>
+
+            <p class="review__text"></p>
+            <p class="review__text"></p>
+          </article>
+
+          <!-- Плюсы / минусы -->
+          <div class="pros-cons">
+            <div class="pros">
+              <h3 class="pros-cons__title"></h3>
+              <ul class="pros-cons__list">
+                <li class="pros-cons__item"></li>
+                <li class="pros-cons__item"></li>
+                <li class="pros-cons__item"></li>
+              </ul>
+            </div>
+            <div class="cons">
+              <h3 class="pros-cons__title"></h3>
+              <ul class="pros-cons__list">
+                <li class="pros-cons__item"></li>
+                <li class="pros-cons__item"></li>
+                <li class="pros-cons__item"></li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Вердикт -->
+          <div class="verdict">
+            <h2 class="verdict__title"></h2>
+            <p class="verdict__text"></p>
+            <div class="verdict__score"></div>
+          </div>
+
+          <!-- Галерея скриншотов -->
+          <section class="gallery">
+            <h2 class="section-title"></h2>
+            <div class="gallery__grid">
+              <div class="gallery__item"></div>
+              <div class="gallery__item"></div>
+              <div class="gallery__item"></div>
+              <div class="gallery__item"></div>
+            </div>
+          </section>
+
+          <!-- Комментарии -->
+          <section class="comments">
+            <h2 class="section-title"></h2>
+            <form class="comments__form">
+              <textarea class="comments__input"></textarea>
+              <button type="submit" class="btn btn--primary comments__submit"></button>
+            </form>
+            <div class="comments__list">
+              <div class="comment">
+                <div class="comment__avatar"></div>
+                <div class="comment__body">
+                  <span class="comment__author"></span>
+                  <p class="comment__text"></p>
+                </div>
+              </div>
+              <div class="comment">
+                <div class="comment__avatar"></div>
+                <div class="comment__body">
+                  <span class="comment__author"></span>
+                  <p class="comment__text"></p>
+                </div>
+              </div>
+            </div>
+          </section>
+
+        </div>
+
+        <!-- Сайдбар: похожие игры -->
+        <aside class="game-body__sidebar">
+          <h3 class="sidebar__title"></h3>
+          <div class="sidebar__card">
+            <div class="sidebar__card-media"></div>
+            <div class="sidebar__card-info">
+              <span class="sidebar__card-title"></span>
+              <span class="sidebar__card-score"></span>
+            </div>
+          </div>
+          <div class="sidebar__card">
+            <div class="sidebar__card-media"></div>
+            <div class="sidebar__card-info">
+              <span class="sidebar__card-title"></span>
+              <span class="sidebar__card-score"></span>
+            </div>
+          </div>
+          <div class="sidebar__card">
+            <div class="sidebar__card-media"></div>
+            <div class="sidebar__card-info">
+              <span class="sidebar__card-title"></span>
+              <span class="sidebar__card-score"></span>
+            </div>
+          </div>
+        </aside>
+
+      </section>
+
+    </div>
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__col"></div>
+      <div class="footer__col"></div>
+      <div class="footer__col"></div>
+    </div>
+    <div class="footer__bottom">
+      <div class="container"></div>
+    </div>
+  </footer>
+
+</body>
+</html>
